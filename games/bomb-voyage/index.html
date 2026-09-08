@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bomb Voyage — TheBigBomb Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <a href="../../index.html" class="back-link">← Back to TheBigBomb</a>
+
+    <header>
+      <h1>🪺 Bomb <span>Voyage</span></h1>
+      <p class="tagline">Fly the stork. Land the bomb <em>gently</em>. Don't miss the pad.</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><span class="label">Streak</span><span id="streak">0</span></div>
+      <div class="stat"><span class="label">Best Streak</span><span id="bestStreak">0</span></div>
+      <div class="stat"><span class="label">Attempts</span><span id="attempts">0</span></div>
+      <div class="stat"><span class="label">Level</span><span id="difficultyLabel">Level 1</span></div>
+    </div>
+
+    <div class="game-frame">
+      <canvas id="game" width="480" height="720"></canvas>
+      <div id="overlayMessage" class="overlay-message"></div>
+    </div>
+
+    <p id="hint" class="hint">Click anywhere to flap. Click left/right of the stork to nudge it that way — only a little. Quick successive clicks build a combo for a bigger flap/nudge.</p>
+
+    <div class="controls">
+      <button id="restart" class="primary">Restart</button>
+    </div>
+
+    <footer>
+      <p>Gravity never lets up. Flap to slow your fall, but every click also nudges you left or right depending on which side of the stork you click — overcorrect and you'll drift off target. Click twice or three times in quick succession for a bigger flap and nudge (×1.5, ×2.0). The only safe spot is the little woven <strong>cradle</strong> in the middle of the pad — land there gently and it's a catch; anywhere else, on the pad or off it, means BOOM, Looney-Tunes style: soot, stars, and a very dazed stork. Every successful landing levels you up and adds one more hazard: a tree, then a building, then a crop-sprayer plane drifting across the sky, then a barn that swallows the cradle under its roof — you'll have to duck in through its open side at low altitude to reach it. Crash and it's back to level 1.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

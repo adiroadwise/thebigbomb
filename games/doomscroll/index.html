@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Doomscroll — TheBigBomb Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="wrap">
+    <a href="../../index.html" class="back-link">← Back to TheBigBomb</a>
+
+    <header>
+      <h1>💣 The <span>Doomscroll</span></h1>
+      <p class="tagline">Match same-colored bombs as new ones drop in — the fun never stops!</p>
+    </header>
+
+    <div class="stats">
+      <div class="stat"><span class="label">Score</span><span id="score">0</span></div>
+      <div class="stat"><span class="label">Best</span><span id="best">0</span></div>
+      <div class="stat"><span class="label">Level</span><span id="level">1</span></div>
+      <div class="stat"><span class="label">Moves</span><span id="moves">0</span></div>
+    </div>
+
+    <div id="board" class="board"></div>
+
+    <p id="preview" class="preview">Hover a bomb group to preview its chain and score.</p>
+
+    <div class="controls">
+      <button data-diff="easy" class="diff-btn">Easy</button>
+      <button data-diff="medium" class="diff-btn active">Medium</button>
+      <button data-diff="hard" class="diff-btn">Hard</button>
+      <button id="newGame" class="primary">New Game</button>
+    </div>
+
+    <p id="message" class="message"></p>
+
+    <footer>
+      <p>Only bombs of the <strong>same color</strong> that touch (up/down/left/right) can explode together — click a group of 2 or more to detonate it. Removed bombs fall down and fresh bombs keep dropping in from the top, so the board never empties and the game never ends. Bigger groups score more, and the board gets harder (more colors) the higher your score climbs. There's always at least one match available — go for a new best score!</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
